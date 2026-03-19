@@ -25,6 +25,16 @@ _KEYWORD_MAP = {
     "optimizer": ["optimizer", "adam", "sgd", "adamw", "rmsprop", "momentum"],
     "loss_function": ["loss", "cross-entropy", "mse", "focal loss", "contrastive"],
     "architecture_depth": ["depth", "layer", "deeper", "shallow", "network depth", "add layer", "remove layer"],
+    "transformer": ["transformer"],
+    "self_attention": ["self-attention", "self attention"],
+    "positional_encoding": ["positional encoding", "position embedding", "rotary"],
+    "gan": ["gan", "generative adversarial"],
+    "discriminator": ["discriminator"],
+    "policy_gradient": ["policy gradient", "reinforce", "ppo", "trpo"],
+    "reward_shaping": ["reward shaping", "reward design", "shaped reward"],
+    "embedding": ["embedding", "word2vec", "glove"],
+    "tokenization": ["tokenization", "tokenizer", "bpe", "sentencepiece"],
+    "fine_tuning": ["fine-tuning", "fine tuning", "finetune", "finetuning", "lora", "adapter"],
 }
 
 

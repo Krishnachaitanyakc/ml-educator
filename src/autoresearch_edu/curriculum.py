@@ -31,6 +31,16 @@ _CONCEPT_COMPLEXITY = {
     "normalization": 3,
     "architecture_depth": 3,
     "attention": 4,
+    "transformer": 4,
+    "self_attention": 4,
+    "positional_encoding": 4,
+    "embedding": 2,
+    "tokenization": 2,
+    "fine_tuning": 3,
+    "gan": 4,
+    "discriminator": 4,
+    "policy_gradient": 5,
+    "reward_shaping": 5,
 }
 
 # Lesson topic groups
@@ -40,7 +50,12 @@ _TOPIC_GROUPS = {
     "Preventing Overfitting: Regularization": ["regularization"],
     "Stabilizing Training: Normalization": ["normalization"],
     "Architecture Decisions: Depth & Structure": ["architecture_depth"],
-    "Advanced: Attention Mechanisms": ["attention"],
+    "Advanced: Attention Mechanisms": ["attention", "self_attention"],
+    "Transformers: Architecture & Positional Encoding": ["transformer", "positional_encoding"],
+    "Text Processing: Tokenization & Embeddings": ["tokenization", "embedding"],
+    "Transfer Learning: Fine-Tuning": ["fine_tuning"],
+    "Generative Models: GANs": ["gan", "discriminator"],
+    "Reinforcement Learning: Policy & Rewards": ["policy_gradient", "reward_shaping"],
 }
 
 

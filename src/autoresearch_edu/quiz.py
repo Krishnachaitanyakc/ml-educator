@@ -106,6 +106,116 @@ _MC_QUESTIONS = {
         ],
         correct_answer="Residual connections (skip connections)",
     ),
+    "transformer": Question(
+        text="What is a key advantage of transformers over RNNs?",
+        question_type="multiple_choice",
+        options=[
+            "They use less memory",
+            "They process all positions in parallel",
+            "They do not need training data",
+            "They are always smaller models",
+        ],
+        correct_answer="They process all positions in parallel",
+    ),
+    "self_attention": Question(
+        text="In self-attention, where do the queries, keys, and values come from?",
+        question_type="multiple_choice",
+        options=[
+            "Separate input sequences",
+            "The same input sequence",
+            "A fixed lookup table",
+            "Random initialization only",
+        ],
+        correct_answer="The same input sequence",
+    ),
+    "positional_encoding": Question(
+        text="Why do transformers need positional encoding?",
+        question_type="multiple_choice",
+        options=[
+            "To reduce memory usage",
+            "To inject sequence order information",
+            "To speed up training",
+            "To handle variable-length inputs",
+        ],
+        correct_answer="To inject sequence order information",
+    ),
+    "gan": Question(
+        text="What is the training objective of a GAN?",
+        question_type="multiple_choice",
+        options=[
+            "Minimize reconstruction error",
+            "Maximize likelihood",
+            "A minimax game between generator and discriminator",
+            "Minimize KL divergence directly",
+        ],
+        correct_answer="A minimax game between generator and discriminator",
+    ),
+    "discriminator": Question(
+        text="What is the role of the discriminator in a GAN?",
+        question_type="multiple_choice",
+        options=[
+            "Generate new data samples",
+            "Distinguish real data from generated data",
+            "Compress the data",
+            "Select training examples",
+        ],
+        correct_answer="Distinguish real data from generated data",
+    ),
+    "policy_gradient": Question(
+        text="What does the REINFORCE algorithm estimate?",
+        question_type="multiple_choice",
+        options=[
+            "The value function directly",
+            "The gradient of expected reward with respect to policy parameters",
+            "The optimal action in each state",
+            "The transition probabilities of the environment",
+        ],
+        correct_answer="The gradient of expected reward with respect to policy parameters",
+    ),
+    "reward_shaping": Question(
+        text="What must potential-based reward shaping guarantee?",
+        question_type="multiple_choice",
+        options=[
+            "Faster convergence",
+            "The optimal policy is preserved",
+            "Higher rewards",
+            "Simpler state spaces",
+        ],
+        correct_answer="The optimal policy is preserved",
+    ),
+    "embedding": Question(
+        text="What property do good embeddings have?",
+        question_type="multiple_choice",
+        options=[
+            "All vectors have the same magnitude",
+            "Similar items have similar vector representations",
+            "Each dimension represents a known feature",
+            "They are always one-hot encoded",
+        ],
+        correct_answer="Similar items have similar vector representations",
+    ),
+    "tokenization": Question(
+        text="What does BPE (Byte Pair Encoding) do?",
+        question_type="multiple_choice",
+        options=[
+            "Encodes each character as a byte",
+            "Iteratively merges frequent byte pairs to build a subword vocabulary",
+            "Splits text only at whitespace boundaries",
+            "Converts text to a fixed-length representation",
+        ],
+        correct_answer="Iteratively merges frequent byte pairs to build a subword vocabulary",
+    ),
+    "fine_tuning": Question(
+        text="Why is a lower learning rate typically used for fine-tuning?",
+        question_type="multiple_choice",
+        options=[
+            "To save compute resources",
+            "To avoid destroying pretrained knowledge",
+            "Because fine-tuning datasets are always large",
+            "To make training faster",
+        ],
+        correct_answer="To avoid destroying pretrained knowledge",
+    ),
 }
 
 _FR_QUESTIONS = {
