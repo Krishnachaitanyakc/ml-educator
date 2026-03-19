@@ -1,7 +1,7 @@
 """Tests for newly added ML concepts."""
 import pytest
 
-from autoresearch_edu.concepts import ConceptLibrary, Concept
+from ml_educator.concepts import ConceptLibrary, Concept
 
 
 NEW_CONCEPTS = [

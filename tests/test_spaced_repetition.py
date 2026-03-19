@@ -2,7 +2,7 @@
 import pytest
 from datetime import datetime, timedelta
 
-from autoresearch_edu.spaced_repetition import SpacedRepetitionScheduler, ConceptState
+from ml_educator.spaced_repetition import SpacedRepetitionScheduler, ConceptState
 
 
 class TestSpacedRepetition:

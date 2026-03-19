@@ -1,4 +1,4 @@
-# autoresearch-edu
+# ml-educator
 
 Educational mode where the autoresearch agent explains its ML reasoning. Provides a rich ML concept library, annotates experiments with relevant concepts, generates educational commentary, builds curricula from experiment history, and generates quizzes.
 
@@ -14,27 +14,27 @@ pip install -e .
 
 ```bash
 # Browse concept library
-autoresearch-edu concepts
-autoresearch-edu concepts --name learning_rate --level beginner
+ml-educator concepts
+ml-educator concepts --name learning_rate --level beginner
 
 # Annotate a specific experiment
-autoresearch-edu annotate --description "increased learning rate" --metric-change 0.03
+ml-educator annotate --description "increased learning rate" --metric-change 0.03
 
 # Generate commentary
-autoresearch-edu commentary --results results.tsv --level beginner
+ml-educator commentary --results results.tsv --level beginner
 
 # Build curriculum from experiment history
-autoresearch-edu curriculum --results results.tsv
+ml-educator curriculum --results results.tsv
 
 # Generate quiz
-autoresearch-edu quiz --results results.tsv
+ml-educator quiz --results results.tsv
 ```
 
 ### Python API
 
 ```python
-from autoresearch_edu.concepts import ConceptLibrary
-from autoresearch_edu.annotator import ExperimentAnnotator
+from ml_educator.concepts import ConceptLibrary
+from ml_educator.annotator import ExperimentAnnotator
 
 library = ConceptLibrary()
 concept = library.get("learning_rate")

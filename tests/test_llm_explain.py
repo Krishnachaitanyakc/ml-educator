@@ -2,11 +2,11 @@
 import pytest
 from unittest.mock import patch, MagicMock
 
-from autoresearch_edu.llm_explain import LLMExplainer
+from ml_educator.llm_explain import LLMExplainer
 
 
 class TestLLMExplainer:
-    @patch("autoresearch_edu.llm_explain.anthropic")
+    @patch("ml_educator.llm_explain.anthropic")
     def test_explain_calls_api(self, mock_anthropic):
         mock_client = MagicMock()
         mock_anthropic.Anthropic.return_value = mock_client
@@ -23,7 +23,7 @@ class TestLLMExplainer:
         assert call_kwargs["model"] == "claude-sonnet-4-20250514"
         assert call_kwargs["max_tokens"] == 1024
 
-    @patch("autoresearch_edu.llm_explain.anthropic")
+    @patch("ml_educator.llm_explain.anthropic")
     def test_explain_includes_level_in_prompt(self, mock_anthropic):
         mock_client = MagicMock()
         mock_anthropic.Anthropic.return_value = mock_client
@@ -38,7 +38,7 @@ class TestLLMExplainer:
         prompt = call_kwargs["messages"][0]["content"]
         assert "advanced" in prompt
 
-    @patch("autoresearch_edu.llm_explain.anthropic")
+    @patch("ml_educator.llm_explain.anthropic")
     def test_explain_includes_concepts_context(self, mock_anthropic):
         mock_client = MagicMock()
         mock_anthropic.Anthropic.return_value = mock_client

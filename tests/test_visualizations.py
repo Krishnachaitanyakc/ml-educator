@@ -2,7 +2,7 @@
 import os
 import pytest
 
-from autoresearch_edu.visualizations import (
+from ml_educator.visualizations import (
     plot_learning_rate_landscape,
     plot_attention_heatmap,
     plot_optimizer_paths,

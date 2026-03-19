@@ -2,8 +2,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
 
-from autoresearch_edu.concepts import ConceptLibrary
-from autoresearch_edu.curriculum import Lesson
+from ml_educator.concepts import ConceptLibrary
+from ml_educator.curriculum import Lesson
 
 
 @dataclass

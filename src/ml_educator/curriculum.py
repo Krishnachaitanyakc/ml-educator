@@ -2,7 +2,7 @@
 from dataclasses import dataclass, field
 from typing import Any, Dict, List
 
-from autoresearch_edu.annotator import ExperimentAnnotator
+from ml_educator.annotator import ExperimentAnnotator
 
 
 @dataclass

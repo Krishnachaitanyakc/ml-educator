@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "autoresearch-edu"
+name = "ml-educator"
 version = "0.1.0"
 description = "Educational mode for autoresearch - explains ML reasoning"
 requires-python = ">=3.9"
@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-autoresearch-edu = "autoresearch_edu.cli:cli"
+ml-educator = "ml_educator.cli:cli"
 
 [tool.setuptools.packages.find]
 where = ["src"]

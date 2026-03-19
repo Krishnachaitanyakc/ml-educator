@@ -2,7 +2,7 @@
 from dataclasses import dataclass, field
 from typing import Dict, List
 
-from autoresearch_edu.concepts import ConceptLibrary
+from ml_educator.concepts import ConceptLibrary
 
 
 @dataclass

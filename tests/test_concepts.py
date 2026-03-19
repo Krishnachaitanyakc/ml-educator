@@ -1,7 +1,7 @@
 """Tests for the concept library module."""
 import pytest
 
-from autoresearch_edu.concepts import ConceptLibrary, Concept
+from ml_educator.concepts import ConceptLibrary, Concept
 
 
 class TestConceptLibrary:

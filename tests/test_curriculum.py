@@ -1,7 +1,7 @@
 """Tests for the curriculum builder module."""
 import pytest
 
-from autoresearch_edu.curriculum import CurriculumBuilder, Curriculum, Lesson
+from ml_educator.curriculum import CurriculumBuilder, Curriculum, Lesson
 
 
 @pytest.fixture

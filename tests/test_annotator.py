@@ -1,7 +1,7 @@
 """Tests for the experiment annotator module."""
 import pytest
 
-from autoresearch_edu.annotator import ExperimentAnnotator, AnnotatedExperiment
+from ml_educator.annotator import ExperimentAnnotator, AnnotatedExperiment
 
 
 class TestExperimentAnnotator:

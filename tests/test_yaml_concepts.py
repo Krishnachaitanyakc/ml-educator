@@ -1,7 +1,7 @@
 """Tests for YAML concept loading."""
 import pytest
 
-from autoresearch_edu.concepts import ConceptLibrary
+from ml_educator.concepts import ConceptLibrary
 
 
 @pytest.fixture

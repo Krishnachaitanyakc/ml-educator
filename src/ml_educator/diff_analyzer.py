@@ -3,7 +3,7 @@ import re
 from dataclasses import dataclass
 from typing import List
 
-from autoresearch_edu.concepts import ConceptLibrary
+from ml_educator.concepts import ConceptLibrary
 
 
 @dataclass

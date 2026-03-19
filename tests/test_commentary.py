@@ -1,8 +1,8 @@
 """Tests for the commentary generator module."""
 import pytest
 
-from autoresearch_edu.annotator import ExperimentAnnotator, AnnotatedExperiment
-from autoresearch_edu.commentary import CommentaryGenerator, Commentary
+from ml_educator.annotator import ExperimentAnnotator, AnnotatedExperiment
+from ml_educator.commentary import CommentaryGenerator, Commentary
 
 
 @pytest.fixture

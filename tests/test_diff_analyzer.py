@@ -1,7 +1,7 @@
 """Tests for the diff analyzer module."""
 import pytest
 
-from autoresearch_edu.diff_analyzer import DiffAnalyzer, DiffDetection
+from ml_educator.diff_analyzer import DiffAnalyzer, DiffDetection
 
 
 SAMPLE_DIFF = """\

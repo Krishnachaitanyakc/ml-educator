@@ -3,7 +3,7 @@ import os
 
 import anthropic
 
-from autoresearch_edu.concepts import ConceptLibrary
+from ml_educator.concepts import ConceptLibrary
 
 
 class LLMExplainer:

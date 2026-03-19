@@ -2,7 +2,7 @@
 import pytest
 from click.testing import CliRunner
 
-from autoresearch_edu.cli import cli
+from ml_educator.cli import cli
 
 
 @pytest.fixture

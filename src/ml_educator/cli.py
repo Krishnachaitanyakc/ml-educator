@@ -1,13 +1,13 @@
-"""Command-line interface for autoresearch-edu."""
+"""Command-line interface for ml-educator."""
 import csv
 
 import click
 
-from autoresearch_edu.concepts import ConceptLibrary
-from autoresearch_edu.annotator import ExperimentAnnotator
-from autoresearch_edu.commentary import CommentaryGenerator
-from autoresearch_edu.curriculum import CurriculumBuilder
-from autoresearch_edu.quiz import QuizGenerator
+from ml_educator.concepts import ConceptLibrary
+from ml_educator.annotator import ExperimentAnnotator
+from ml_educator.commentary import CommentaryGenerator
+from ml_educator.curriculum import CurriculumBuilder
+from ml_educator.quiz import QuizGenerator
 
 
 @click.group()
@@ -119,7 +119,7 @@ def quiz(results, interactive):
 @click.option("--output", default=None, help="Output file path")
 def visualize(concept, output):
     """Generate a diagram for an ML concept."""
-    from autoresearch_edu.visualizations import DIAGRAM_GENERATORS
+    from ml_educator.visualizations import DIAGRAM_GENERATORS
     if concept not in DIAGRAM_GENERATORS:
         available = ", ".join(DIAGRAM_GENERATORS.keys())
         click.echo(f"No diagram available for '{concept}'. Available: {available}")
@@ -133,9 +133,9 @@ def visualize(concept, output):
 @click.option("--state-file", default=".spaced_reps.pkl", help="Path to state file")
 def review(state_file):
     """Review due concepts using spaced repetition."""
-    from autoresearch_edu.spaced_repetition import SpacedRepetitionScheduler
-    from autoresearch_edu.quiz import QuizGenerator, _MC_QUESTIONS
-    from autoresearch_edu.curriculum import Lesson
+    from ml_educator.spaced_repetition import SpacedRepetitionScheduler
+    from ml_educator.quiz import QuizGenerator, _MC_QUESTIONS
+    from ml_educator.curriculum import Lesson
 
     lib = ConceptLibrary()
     scheduler = SpacedRepetitionScheduler(state_file)
@@ -175,7 +175,7 @@ def review(state_file):
 @cli.command()
 def assess():
     """Assess your ML knowledge level to personalize your curriculum."""
-    from autoresearch_edu.quiz import _MC_QUESTIONS
+    from ml_educator.quiz import _MC_QUESTIONS
 
     topics = {
         "basics": ["learning_rate", "batch_size", "loss_function"],
@@ -234,7 +234,7 @@ def assess():
 @click.option("--level", default="beginner", help="Explanation level")
 def diff_analyze(diff_file, level):
     """Detect hyperparameter changes in a git diff and explain related concepts."""
-    from autoresearch_edu.diff_analyzer import DiffAnalyzer
+    from ml_educator.diff_analyzer import DiffAnalyzer
 
     with open(diff_file, "r") as f:
         diff_text = f.read()
@@ -260,7 +260,7 @@ def diff_analyze(diff_file, level):
 @click.option("--level", default="beginner", help="Explanation level")
 def explain(description, level):
     """Get an LLM-powered explanation of an experiment."""
-    from autoresearch_edu.llm_explain import LLMExplainer
+    from ml_educator.llm_explain import LLMExplainer
     explainer = LLMExplainer()
     result = explainer.explain(description, level)
     click.echo(result)

@@ -4,8 +4,8 @@ from typing import List
 
 from jinja2 import Environment, BaseLoader
 
-from autoresearch_edu.annotator import AnnotatedExperiment
-from autoresearch_edu.concepts import ConceptLibrary
+from ml_educator.annotator import AnnotatedExperiment
+from ml_educator.concepts import ConceptLibrary
 
 
 @dataclass

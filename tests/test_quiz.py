@@ -1,8 +1,8 @@
 """Tests for the quiz generator module."""
 import pytest
 
-from autoresearch_edu.curriculum import CurriculumBuilder, Lesson
-from autoresearch_edu.quiz import QuizGenerator, Quiz, Question
+from ml_educator.curriculum import CurriculumBuilder, Lesson
+from ml_educator.quiz import QuizGenerator, Quiz, Question
 
 
 @pytest.fixture
